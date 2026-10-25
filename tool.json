@@ -1,0 +1,59 @@
+{
+  "id": "E054",
+  "slug": "eng-gravitational-energy",
+  "title": "중력 위치에너지 계산기",
+  "title_en": "Gravitational Potential Energy Calculator",
+  "category": "우주",
+  "category_en": "Space",
+  "fields": [
+    {
+      "key": "m",
+      "label": "중심 천체 질량 M",
+      "label_en": "Central body mass M",
+      "dimension": "mass",
+      "example": 5.9722e+24,
+      "constraint": "positive",
+      "display_unit": "kg",
+      "display_value": "5.9722e+24"
+    },
+    {
+      "key": "small",
+      "label": "시험물체 질량 m",
+      "label_en": "Test mass m",
+      "dimension": "mass",
+      "example": 1000,
+      "constraint": "positive",
+      "display_unit": "kg",
+      "display_value": "1000"
+    },
+    {
+      "key": "r",
+      "label": "중심거리 r",
+      "label_en": "Center distance r",
+      "dimension": "length",
+      "example": 7000000.0,
+      "constraint": "positive",
+      "display_unit": "km",
+      "display_value": "7000"
+    }
+  ],
+  "result_label": "중력 위치에너지 U",
+  "result_label_en": "Gravitational potential energy U",
+  "result_dimension": "energy",
+  "formula": "U = −GMm/r",
+  "purpose": "무한대를 기준으로 한 천체 중력 위치에너지 계산",
+  "purpose_en": "Calculate gravitational potential energy relative to infinity.",
+  "assumptions": "M,m,r>0. 구대칭 천체 외부와 뉴턴 중력, 시험질량을 가정한다. 무한대에서 U=0이므로 결과는 음수다. 지표 근처 mgh 변화량과 구분한다.",
+  "assumptions_en": "Required: M,m,r>0, a test mass and an exterior spherical Newtonian field. The zero of energy is at infinity, so the result is negative. This differs from the near-surface change mgh.",
+  "sources": [
+    {
+      "label": "OpenStax · 13 3 gravitational potential energy and total energy",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/13-3-gravitational-potential-energy-and-total-energy"
+    }
+  ],
+  "condition": "",
+  "condition_en": "",
+  "site": "https://nanalab.kr/eng-gravitational-energy/",
+  "repository": "https://github.com/NaNaCompany/eng-gravitational-energy",
+  "output_unit": "J"
+}
